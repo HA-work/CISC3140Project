@@ -1,0 +1,138 @@
+Volvo                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2006          , Volvo         , S60r          , 100           , 22            , 115             
+
+Mitsub               
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2001          , Mitsub        , Evo7          , 19            , 40            , 77              
+
+Mitsu                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2010          , Mitsu         , Lancer        , 91            , 102           , 9               
+1995          , Mitsu         , Evo8          , 140           , 44            , 66              
+2014          , Mitsu         , Lancer        , 176           , 40            , 76              
+
+Scion                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2015          , Scion         , Frs           , 57            , 80            , 21              
+2013          , Scion         , Frs           , 235           , 20            , 119             
+
+Mazda                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2007          , Mazda         , Speed 3       , 52            , 48            , 59              
+2015          , Mazda         , 6             , 78            , 36            , 85              
+1993          , Mazda         , Miata         , 141           , 26            , 106             
+
+Nissan               
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2010          , Nissan        , 370           , 228           , 92            , 14              
+2012          , Nissan        , 370z          , 161           , 84            , 18              
+2011          , Nissan        , 370           , 153           , 84            , 19              
+
+Chevy                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2010          , Chevy         , Camaro        , 218           , 64            , 34              
+2014          , Chevy         , Cruze         , 170           , 50            , 54              
+2015          , Chevy         , Camaro        , 0             , 0             , 165             
+
+Acura                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2012          , Acura         , Tsx sportwagon, 113           , 116           , 4               
+2008          , Acura         , TL            , 112           , 110           , 6               
+2015          , Acura         , TLX           , 114           , 102           , 8               
+
+Civic coupe          
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2014          , Civic coupe   , Si            , 104           , 48            , 57              
+
+Dodge                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2001          , Dodge         , Viper         , 42            , 8             , 152             
+
+Lexus                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2006          , Lexus         , Sc430         , 123           , 66            , 31              
+2015          , Lexus         , Is250         , 222           , 40            , 75              
+1995          , Lexus         , Sc300         , 190           , 10            , 145             
+
+Mercedes             
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2012          , Mercedes      , C250          , 25            , 78            , 22              
+2012          , Mercedes      , Cl63amg       , 84            , 70            , 28              
+2016          , Mercedes      , C43           , 17            , 34            , 87              
+
+Audi                 
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2014          , Audi          , S4            , 15            , 120           , 3               
+2015          , Audi          , S3            , 18            , 38            , 79              
+2008          , Audi          , A4            , 116           , 28            , 99              
+
+Hyundai              
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2012          , Hyundai       , Celoster      , 30            , 66            , 30              
+2017          , Hyundai       , Elantra sport , 38            , 62            , 36              
+2017          , Hyundai       , Elantra sport , 92            , 30            , 92              
+
+Benz                 
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2012          , Benz          , C63           , 98            , 26            , 103             
+
+Civic                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2014          , Civic         , Si            , 99            , 38            , 80              
+2016          , Civic         , Si            , 72            , 4             , 161             
+
+Subaru               
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2016          , Subaru        , WRX           , 36            , 74            , 24              
+2015          , Subaru        , Sti           , 33            , 68            , 29              
+2009          , Subaru        , WRX           , 21            , 62            , 38              
+
+Ford                 
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2017          , Ford          , Focus rs      , 137           , 54            , 47              
+2014          , Ford          , Focus st      , 120           , 30            , 94              
+2016          , Ford          , Focus rs      , 219           , 26            , 101             
+
+Jeep                 
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2015          , Jeep          , Wrangler      , 124           , 124           , 2               
+
+Infiniti             
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2010          , Infiniti      , G37           , 128           , 128           , 1               
+2004          , Infiniti      , G35           , 95            , 12            , 137             
+
+Volkswagen           
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2010          , Volkswagen    , Eos           , 126           , 92            , 13              
+2011          , Volkswagen    , Gti           , 180           , 82            , 20              
+2014          , Volkswagen    , Gli           , 156           , 56            , 45              
+
+Honda                
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2014          , Honda         , Accord        , 83            , 112           , 5               
+2009          , Honda         , Fit           , 65            , 106           , 7               
+2007          , Honda         , Fit           , 31            , 102           , 10              
+
+Toyota               
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2011          , Toyota        , Camry         , 110           , 58            , 43              
+1993          , Toyota        , Supra         , 142           , 58            , 44              
+2011          , Toyota        , 4 Runner      , 43            , 54            , 50              
+
+Bmw                  
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2016          , Bmw           , M2            , 2             , 24            , 110             
+2014          , Bmw           , 4             , 172           , 22            , 113             
+2007          , Bmw           , 328i          , 111           , 10            , 143             
+
+Chrystler            
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2007          , Chrystler     , 300           , 216           , 96            , 11              
+
+Infinity             
+Year          , Make          , Model         , Car_ID        , total_score   , ranking          
+2011          , Infinity      , M37s          , 122           , 44            , 64              
+2009          , Infinity      , G37           , 20            , 38            , 81              
+

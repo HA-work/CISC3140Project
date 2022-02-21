@@ -1,0 +1,168 @@
+Year          , Make          , Model         , Car_ID        , total_score   , ranking        
+2010          , Infiniti      , G37           , 128           , 128           
+2015          , Jeep          , Wrangler      , 124           , 124           
+2014          , Audi          , S4            , 15            , 120           
+2012          , Acura         , Tsx sportwagon, 113           , 116           
+2014          , Honda         , Accord        , 83            , 112           
+2008          , Acura         , TL            , 112           , 110           
+2009          , Honda         , Fit           , 65            , 106           
+2015          , Acura         , TLX           , 114           , 102           
+2010          , Mitsu         , Lancer        , 91            , 102           
+2007          , Honda         , Fit           , 31            , 102           
+2007          , Chrystler     , 300           , 216           , 96            
+2016          , Honda         , Civic 1.5t    , 37            , 92            
+2010          , Volkswagen    , Eos           , 126           , 92            
+2010          , Nissan        , 370           , 228           , 92            
+2006          , Honda         , Civic         , 175           , 92            
+2013          , Acura         , Tsx           , 127           , 86            
+2010          , Honda         , Civic         , 63            , 86            
+2012          , Nissan        , 370z          , 161           , 84            
+2011          , Nissan        , 370           , 153           , 84            
+2011          , Volkswagen    , Gti           , 180           , 82            
+2015          , Scion         , Frs           , 57            , 80            
+2012          , Mercedes      , C250          , 25            , 78            
+2007          , Acura         , Tl type s     , 106           , 78            
+2016          , Subaru        , WRX           , 36            , 74            
+2011          , Honda         , Civic         , 39            , 72            
+2010          , Acura         , Tsx           , 103           , 72            
+2009          , Honda         , Oddesy        , 178           , 72            
+2012          , Mercedes      , Cl63amg       , 84            , 70            
+2015          , Subaru        , Sti           , 33            , 68            
+2012          , Hyundai       , Celoster      , 30            , 66            
+2006          , Lexus         , Sc430         , 123           , 66            
+2006          , Acura         , Tsx           , 1051          , 66            
+2012          , Acura         , Tsx           , 41            , 64            
+2010          , Chevy         , Camaro        , 218           , 64            
+2007          , Nissan        , 350z          , 158           , 64            
+2017          , Hyundai       , Elantra sport , 38            , 62            
+2015          , Acura         , TLX           , 48            , 62            
+2009          , Subaru        , WRX           , 21            , 62            
+1998          , Subaru        , Legacy        , 23            , 62            
+1990          , Nissan        , 240           , 12            , 62            
+2016          , Honda         , Civic         , 35            , 60            
+2013          , Subaru        , WRX           , 53            , 60            
+2011          , Toyota        , Camry         , 110           , 58            
+1993          , Toyota        , Supra         , 142           , 58            
+2014          , Volkswagen    , Gli           , 156           , 56            
+2001          , Honda         , Crv           , 115           , 56            
+2017          , Ford          , Focus rs      , 137           , 54            
+2016          , Volkswagen    , Golf r        , 6             , 54            
+2015          , Subaru        , Sti           , 37            , 54            
+2011          , Toyota        , 4 Runner      , 43            , 54            
+2016          , Acura         , TLX           , 225           , 52            
+2013          , Subaru        , WRX           , 134           , 52            
+2015          , Subaru        , WRX           , 51            , 50            
+2014          , Chevy         , Cruze         , 170           , 50            
+2012          , Toyota        , Fj cruiser    , 189           , 50            
+2003          , Acura         , Rsx           , 5             , 50            
+2014          , Civic coupe   , Si            , 104           , 48            
+2008          , Honda         , Accord        , 88            , 48            
+2007          , Mazda         , Speed 3       , 52            , 48            
+2004          , Acura         , Tsx           , 211           , 48            
+2018          , Subaru        , WRX           , 232           , 46            
+2014          , Nissan        , Gtr           , Showcar       , 44            
+2012          , Acura         , TL            , 121           , 44            
+2011          , Infinity      , M37s          , 122           , 44            
+1996          , Nissan        , 240           , 9             , 44            
+1995          , Mitsu         , Evo8          , 140           , 44            
+1993          , Honda         , Civic         , 118           , 44            
+1991          , Nissan        , Skyline       , 8             , 44            
+2017          , Subaru        , Brz           , 153           , 42            
+2017          , Honda         , Accord        , 85            , 42            
+2009          , Volkswagen    , Jetta         , 56            , 42            
+2006          , Acura         , TL            , 45            , 42            
+1997          , Acura         , Integra       , 49            , 42            
+2018          , Honda         , Civic si      , 44            , 40            
+2015          , Lexus         , Is250         , 222           , 40            
+2014          , Mitsu         , Lancer        , 176           , 40            
+2001          , Mitsub        , Evo7          , 19            , 40            
+1993          , Honda         , Civic eG      , 207           , 40            
+2015          , Audi          , S3            , 18            , 38            
+2014          , Civic         , Si            , 99            , 38            
+2009          , Infinity      , G37           , 20            , 38            
+2004          , Volkswagen    , R32           , 179           , 38            
+1990          , Volkswagen    , Gti           , 145           , 38            
+2016          , Subaru        , WRX           , 200           , 36            
+2015          , Mazda         , 6             , 78            , 36            
+2014          , Nissan        , 370z          , 162           , 36            
+2016          , Mercedes      , C43           , 17            , 34            
+2001          , Nissan        , S15           , 10            , 34            
+2013          , Subaru        , BRZ           , 24            , 32            
+2008          , Volkswagen    , R32           , 46            , 32            
+1992          , Nissan        , Rps13         , 4341          , 32            
+2017          , Hyundai       , Elantra sport , 92            , 30            
+2014          , Nissan        , Sentra        , 7             , 30            
+2014          , Ford          , Focus st      , 120           , 30            
+2003          , Volkswagen    , Gti           , 181           , 30            
+1991          , Nissan        , Skyline       , 11            , 30            
+2016          , Volkswagen    , Gti           , 144           , 28            
+2012          , Volkswagen    , Golf          , 59            , 28            
+2008          , Audi          , A4            , 116           , 28            
+1982          , Volkswagen    , Rabbit        , 238           , 28            
+2016          , Ford          , Focus rs      , 219           , 26            
+2014          , Nissan        , Maxima        , 242           , 26            
+2012          , Benz          , C63           , 98            , 26            
+2010          , Volkswagen    , Gti           , 114           , 26            
+2007          , Subaru        , Legacy        , 187           , 26            
+1993          , Mazda         , Miata         , 141           , 26            
+1990          , Nissan        , Skyline       , 14            , 26            
+2016          , Volkswagen    , GTI           , 81            , 24            
+2016          , Honda         , Civic si      , 130           , 24            
+2016          , Bmw           , M2            , 2             , 24            
+2007          , Toyota        , Camry         , 241           , 24            
+2007          , Honda         , Civic         , 22            , 24            
+2014          , Bmw           , 4             , 172           , 22            
+2013          , Mitsu         , Ralliart      , 163           , 22            
+2006          , Volvo         , S60r          , 100           , 22            
+2006          , Nissan        , 350z          , 150           , 22            
+2005          , Acura         , TL            , 93            , 22            
+2016          , Ford          , Mystang       , 167           , 20            
+2013          , Scion         , Frs           , 235           , 20            
+2012          , Volkswagen    , Cc            , 182           , 20            
+2004          , Acura         , Tsx           , 230           , 20            
+2010          , Honda         , Fit           , 34            , 18            
+2008          , Honda         , Accord        , 226           , 18            
+1993          , Mazda         , Miata         , 79            , 18            
+2014          , Honda         , Civic si      , 89            , 16            
+2008          , Volkswagen    , Gli           , Vip           , 16            
+2005          , Volkswagen    , Jetta         , 183           , 16            
+2015          , Subaru        , Sti           , 67            , 14            
+2014          , Nissan        , Ssntra        , 193           , 14            
+2013          , Hyundai       , Gen coupe     , 159           , 14            
+2013          , Audi          , S4            , 108           , 14            
+2012          , Volkswagen    , Gli           , 186           , 14            
+2007          , Honda         , Civic         , 59            , 14            
+2004          , Audi          , A4            , 220           , 14            
+2005          , Volkswagen    , Jetta gli     , 177           , 12            
+2005          , Subaru        , Sti           , 76            , 12            
+2004          , Infiniti      , G35           , 95            , 12            
+2017          , Volkswagen    , Gti           , 96            , 10            
+2015          , Honda         , Accord        , 102           , 10            
+2013          , Nissan        , Altima        , 68            , 10            
+2008          , Toyota        , Matrix        , 243           , 10            
+2008          , Nissan        , 350z          , 16            , 10            
+2007          , Bmw           , 328i          , 111           , 10            
+2004          , Volkswagen    , Gti           , 94            , 10            
+1995          , Lexus         , Sc300         , 190           , 10            
+1990          , Mazda         , Miata         , 138           , 10            
+1987          , Volkswagen    , Jetta         , 237           , 10            
+2018          , Subaru        , WRX           , 69            , 8             
+2015          , Honda         , Accord        , 74            , 8             
+2013          , Volkswagen    , Jett          , 185           , 8             
+2010          , Volkswagen    , Cc            , 184           , 8             
+2001          , Dodge         , Viper         , 42            , 8             
+1996          , Volkswagen    , Jetta         , 86            , 8             
+1995          , Bmw           , 318xi         , 28            , 8             
+2012          , Subaru        , WRX           , 75            , 6             
+2012          , Subaru        , WRX           , 134           , 6             
+2008          , Acura         , TL            , 71            , 6             
+2007          , Subaru        , Legacy        , 187           , 6             
+2004          , Subaru        , Forester      , 64            , 6             
+2001          , Lexus         , Is300         , 212           , 6             
+2016          , Civic         , Si            , 72            , 4             
+2010          , Volkswagen    , Gti           , 66            , 4             
+2006          , Acura         , Rsx           , 174           , 4             
+2010          , Audi          , A4            , 197           , 2             
+2015          , Chevy         , Camaro        , 0             , 0             
+2014          , Honda         , Civic         , 70            , 0             
+2014          , Honda         , Civic         , 101           , 0             
