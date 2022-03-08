@@ -13,6 +13,8 @@ DROP TABLE IF EXISTS Car_Scores;
 
 DROP TABLE IF EXISTS Final_Car_Scores;
 
+DROP TABLE IF EXISTS Judges_Final;
+
 
 .separator ','
 
@@ -105,6 +107,30 @@ Create Table Judges(
         Judge_ID  TEXT PRIMARY KEY,        
         Judge_Name   TEXT        
       
+);
+
+
+Create Table Judges_Final(
+        Judge_ID  TEXT PRIMARY KEY,
+        Judge_Name   TEXT,
+
+
+
+ Judge_Count INTEGER,
+
+ Start_Time TIMESTAMP,
+
+ End_Time TIMESTAMP--,
+
+ --Judging_Duration TIME,
+
+ --Average_Judge_Time TIME
+
+
+
+
+
+
 );
 
 
@@ -204,8 +230,10 @@ COMMIT;
 
 .mode csv
 
-.import data_lab2/data.csv All_Data
+--.import data_lab2/data.csv All_Data
+-- import from cleaned data
 
+.import cleanedLab2Data.csv All_Data
 
 
 
@@ -415,7 +443,7 @@ INNER JOIN Cars B ON A.Car_ID = B.Car_ID
 WHERE LIMIT = 3
 ORDER BY B.[Make],  A.[Ranking]
 ;
-
+-- error hereat LIMIT = 3
 
 
 
@@ -449,26 +477,36 @@ GROUP BY Judge_ID
 -- what about a where conditional to make sure the data is saved correctly?
 
 
-SELECT Judge_ID, Judge_Name, MIN(Timestamp)
-FROM All_Data
-GROUP BY Judge_ID;
+--SELECT Judge_ID, Judge_Name, MIN(Timestamp)
+--FROM All_Data
+--GROUP BY Judge_ID;
 
 
-SELECT Judge_ID, Judge_Name, MAX(Timestamp)
-FROM All_Data
-GROUP BY Judge_ID;
+--SELECT Judge_ID, Judge_Name, MAX(Timestamp)
+--FROM All_Data
+--GROUP BY Judge_ID;
 
-SELECT Judge_ID, Judge_Name, (MAX(Timestamp) - MIN(Timestamp))
-FROM All_Data
-GROUP BY Judge_ID;
+--SELECT Judge_ID, Judge_Name, (MAX(Timestamp) - MIN(Timestamp))
+--FROM All_Data
+--GROUP BY Judge_ID;
 -- does not work
 
 
+INSERT INTO Judges_Final
+
+SELECT Judge_ID, Judge_Name, COUNT(Judge_ID), MIN(Timestamp), MAX(Timestamp)
+
+FROM ALL_Data
+GROUP BY Judge_ID
+
+ORDER BY Judge_ID;
 
 
 
 
-
-SELECT * FROM Judges;
+SELECT * FROM Judges_Final;
 
 -- maybe update the whole column?
+
+
+

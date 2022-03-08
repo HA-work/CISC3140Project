@@ -38,9 +38,12 @@ The second AWK script is called lab1AWKrank.csv
 This files reads in the rank report that I created and makes use of the lines read feature to provide the car ranks.
 It stores this final ranking report in the folder sampleOutputs in a file called rankingReportFinal.csv
 
-The third and last AWK script is called lab1AWKmake.awk
+The third and last AWK script is called lab1AWKmodel.awk
 This file reads in from the rankingReportFinal.csv and the makeList.csv to find the top 3 cars of each make
 and outputs them to a file in sampleOutputs called bestMakes.csv
+Should probably rename this one.
+
+
 
 The make file
 

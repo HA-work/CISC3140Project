@@ -7,5 +7,6 @@ lab1:
 
 
 lab2:
+	sed -e 's|\([0-9]\)/\([0-9]\)/\([0-9][0-9][0-9][0-9]\)|\3-\2-\1|g' data_lab2/data.csv > cleanedLab2Data.csv
 	cat lab2SQLscripts.sql | sqlite3 lab2Carshow.db
 
