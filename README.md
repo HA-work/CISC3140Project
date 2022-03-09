@@ -5,6 +5,48 @@ Repository for CISC 3140 Linux work.
 
 
 
+
+
+For Instructions on Lab2 and explinations of relevant files for Lab2
+Please open the file
+
+Lab2README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Instructions for getting Lab 1 to work
 
 All you need to do is clone this repository and run the command

@@ -1,0 +1,65 @@
+Script started on Tue 08 Mar 2022 07:00:05 PM EST
+[Hassan.Akbar57@sol25 CISC3140Project]$ make lab2
+sed -r -e 'sx([^0-9]|^)([0-9]/)x\10\2xg' -e 'sx/([0-9]/)x/0\1xg' data_lab2/data.csv > leadingZeros.csv
+sed -e 's|\([0-9][0-9]\)/\([0-2][0-9]\)/\([0-9][0-9][0-9][0-9]\)|\3-\2-\1|g' leadingZeros.csv > cleanedLab2Data.csv
+cat lab2SQLscripts.sql | sqlite3 lab2CarShow.db
+All_Data          Car_Scores        Final_Car_Scores  Judges_Final    
+Car_Score         Cars              Judges            Make_List       
+Acura
+Audi
+Bmw
+Chevy
+Chrystler
+Dodge
+Ford
+Honda
+Hyundai
+Infiniti
+Jeep
+Lexus
+Mazda
+Mercedes
+Mitsu
+Nissan
+Scion
+Subaru
+Toyota
+Volkswagen
+Volvo
+Car_Make,"(   
+SELECT Ranking FROM Final_Car_Scores as f 
+WHERE m.Car_Make = f.Car_Make )"
+Acura,4
+Audi,3
+Bmw,108
+Chevy,33
+Chrystler,11
+Dodge,149
+Ford,49
+Honda,5
+Hyundai,30
+Infiniti,1
+Jeep,2
+Lexus,31
+Mazda,59
+Mercedes,22
+Mitsu,10
+Nissan,12
+Scion,21
+Subaru,24
+Toyota,43
+Volkswagen,14
+Volvo,116
+Judge_ID,Judge_Name,Judge_Count,Start_Time,End_Time,Judging_Duration_Min,Average_Judge_Time_Min
+J01,Wayne,31,"2018-05-08 13:47","2018-05-08 17:50",243,7.83870967741935
+J02,Carl,10,"2018-05-08 13:16","2018-05-08 17:14",238,23.8
+J03,Carol,19,"2018-05-08 13:26","2018-05-08 17:35",249,13.1052631578947
+J04,Bob,36,"2018-05-08 13:11","2018-05-08 17:51",280,7.77777777777778
+J05,Adrian,10,"2018-05-08 13:28","2018-05-08 17:31",243,24.3
+J06,Aaron,32,"2018-05-08 13:20","2018-05-08 17:43",263,8.21875
+J08,Danny,5,"2018-05-08 15:26","2018-05-08 17:52",146,29.2
+J09,Dan,24,"2018-05-08 14:08","2018-05-08 17:48",220,9.16666666666667
+[Hassan.Akbar57@sol25 CISC3140Project]$ exit
+exit
+
+Script done on Tue 08 Mar 2022 07:02:24 PM EST

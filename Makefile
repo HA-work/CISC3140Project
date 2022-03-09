@@ -7,6 +7,7 @@ lab1:
 
 
 lab2:
-	sed -e 's|\([0-9]\)/\([0-9]\)/\([0-9][0-9][0-9][0-9]\)|\3-\2-\1|g' data_lab2/data.csv > cleanedLab2Data.csv
-	cat lab2SQLscripts.sql | sqlite3 lab2Carshow.db
+	sed -r -e 'sx([^0-9]|^)([0-9]/)x\10\2xg' -e 'sx/([0-9]/)x/0\1xg' data_lab2/data.csv > leadingZeros.csv
+	sed -e 's|\([0-9][0-9]\)/\([0-2][0-9]\)/\([0-9][0-9][0-9][0-9]\)|\3-\2-\1|g' leadingZeros.csv > cleanedLab2Data.csv
+	cat lab2SQLscripts.sql | sqlite3 lab2CarShow.db
 

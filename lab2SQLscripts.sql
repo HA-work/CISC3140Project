@@ -15,6 +15,8 @@ DROP TABLE IF EXISTS Final_Car_Scores;
 
 DROP TABLE IF EXISTS Judges_Final;
 
+DROP TABLE IF EXISTS Make_List;
+
 
 .separator ','
 
@@ -103,11 +105,30 @@ Create Table Cars(
 
 
 
+
+
+
+Create Table Make_List(
+        Car_Make  TEXT PRIMARY KEY
+        
+
+);
+
+
+
+
+
 Create Table Judges( 
         Judge_ID  TEXT PRIMARY KEY,        
         Judge_Name   TEXT        
       
 );
+
+
+
+
+
+
 
 
 Create Table Judges_Final(
@@ -120,11 +141,11 @@ Create Table Judges_Final(
 
  Start_Time TIMESTAMP,
 
- End_Time TIMESTAMP--,
+ End_Time TIMESTAMP,
 
- --Judging_Duration TIME,
+ Judging_Duration_Min TIME,
 
- --Average_Judge_Time TIME
+ Average_Judge_Time_Min TIME
 
 
 
@@ -165,7 +186,8 @@ Mods_Aftermarket INTEGER,
 Mods_WIP INTEGER,
 Mods_Overall INTEGER,
 Total_Score,
-Ranking  SERIAL
+Ranking  SERIAL,
+Car_Make
 
 );
 
@@ -207,7 +229,8 @@ Mods_Aftermarket INTEGER,
 Mods_WIP INTEGER,
 Mods_Overall INTEGER,
 Total_Score,
-Ranking INTEGER 
+Ranking INTEGER,
+Car_Make 
 
 );
 
@@ -257,6 +280,19 @@ WHERE Name != 'Name'
 
 
 
+INSERT INTO Make_List
+SELECT DISTINCT Make
+FROM All_Data
+WHERE Name != 'Name'
+ORDER BY Make;
+
+
+SELECT * FROM Make_List;
+
+
+
+
+
 INSERT INTO Judges
 SELECT DISTINCT Judge_ID, Judge_Name
 FROM All_Data 
@@ -264,7 +300,7 @@ WHERE Name != 'Name'
 ORDER BY Judge_ID;
 
 
-SELECT * FROM Judges;
+--SELECT * FROM Judges;
 
 
 
@@ -296,7 +332,7 @@ Mods_ICE ,
 Mods_Aftermarket ,
 Mods_WIP ,
 Mods_Overall ,
-Total_Score)
+Total_Score, Car_Make)
 --
 SELECT Car_ID, Racer_Turbo,Racer_Supercharged,
 Racer_Performance,Racer_Horsepower,Car_Overall,Engine_Modifications,
@@ -329,7 +365,7 @@ Mods_Other +
 Mods_ICE +
 Mods_Aftermarket +
 Mods_WIP +
-Mods_Overall) AS Total_Score
+Mods_Overall) AS Total_Score, Make
 FROM All_Data 
 WHERE Name != 'Name'
 ORDER BY Total_Score DESC;
@@ -365,7 +401,7 @@ Engine_Performance,Engine_Chrome,Engine_Detailing,
 Engine_Cleanliness,Body_Frame_Undercarriage,
 Body_Frame_Suspension,Body_Frame_Chrome,
 Body_Frame_Detailing,Body_Frame_Cleanliness,Mods_Paint,Mods_Body,Mods_Wrap,Mods_Rims,Mods_Interior,Mods_Other,Mods_ICE,Mods_Aftermarket,Mods_WIP,Mods_Overall,
-Total_Score, rowid
+Total_Score, rowid, Car_Make
 FROM Car_Scores
 ORDER BY Total_Score DESC;
 
@@ -438,12 +474,39 @@ ORDER BY B.[Make],  A.[Ranking]
 .output stdout
 
 
-SELECT A.[Ranking],A.[Total_Score], B.[Car_ID], B.[Make], B.[Model], B.[Year] FROM Final_Car_Scores A
-INNER JOIN Cars B ON A.Car_ID = B.Car_ID
-WHERE LIMIT = 3
-ORDER BY B.[Make],  A.[Ranking]
-;
+--SELECT A.[Ranking],A.[Total_Score], B.[Car_ID], B.[Make], B.[Model], B.[Year] FROM Final_Car_Scores A
+--INNER JOIN Cars B ON A.Car_ID = B.Car_ID
+--WHERE LIMIT = 3
+--ORDER BY B.[Make],  A.[Ranking]
+--;
 -- error hereat LIMIT = 3
+
+--SELECT f.Ranking, (
+--SELECT Car_Make FROM Make_List as m 
+--WHERE m.Car_Make = f.Car_Make  LIMIT 3 )
+--FROM Final_Car_Scores as f 
+--;
+
+-- working on here
+
+
+--INSERT INTO Make_List
+--VALUES('Jeep'),('Jeep'), ('Jeep');
+
+
+
+
+
+
+
+SELECT m.Car_Make, (   
+SELECT Ranking FROM Final_Car_Scores as f 
+WHERE m.Car_Make = f.Car_Make )
+FROM Make_List as m
+ORDER BY m.Car_Make       
+;
+
+
 
 
 
@@ -468,11 +531,10 @@ ALTER TABLE Judges
 ADD Average_Judge_Time TIME;
 
 
-SELECT Judge_ID, Judge_Name, COUNT(Judge_ID)
-FROM All_Data
-GROUP BY Judge_ID
-
-;
+--SELECT Judge_ID, Judge_Name, COUNT(Judge_ID)
+--FROM All_Data
+--GROUP BY Judge_ID
+--;
 
 -- what about a where conditional to make sure the data is saved correctly?
 
@@ -492,21 +554,38 @@ GROUP BY Judge_ID
 -- does not work
 
 
+--strftime('%M', end)
+
+
 INSERT INTO Judges_Final
 
-SELECT Judge_ID, Judge_Name, COUNT(Judge_ID), MIN(Timestamp), MAX(Timestamp)
+SELECT Judge_ID, Judge_Name, COUNT(Judge_ID), MIN(Timestamp), MAX(Timestamp),ROUND((JULIANDAY(MAX(Timestamp))-JULIANDAY( MIN(Timestamp))) * 1440),
+((ROUND((JULIANDAY(MAX(Timestamp))-JULIANDAY( MIN(Timestamp))) * 1440))/COUNT(Judge_ID))
 
 FROM ALL_Data
+WHERE Judge_ID != 'Judge_ID'
 GROUP BY Judge_ID
 
-ORDER BY Judge_ID;
+ORDER BY Judge_ID
+;
 
 
+
+
+.output stdout
 
 
 SELECT * FROM Judges_Final;
 
 -- maybe update the whole column?
+
+
+
+.headers on
+.mode csv
+.output Lab2SampleOutputs/JudgeData.csv
+
+SELECT * FROM Judges_Final;  
 
 
 
